@@ -49,15 +49,14 @@ public class InventoryDAO {
     }
 
     public void addItem(InventoryItem item) throws IllegalArgumentException {
-        inventory.add(inventory.size(), item);
 
-//        if (this.inventory.stream().parallel().anyMatch(obj -> obj.getId() == item.getId())){
-//            throw new IllegalArgumentException("An item with the same ID already exists in the inventory.");
-//        }
-//        else {
-//            System.out.println();
-//            inventory.add(inventory.size(), item);
-//        }
+        if (this.inventory.stream().parallel().anyMatch(obj -> obj.getId() == item.getId())){
+            System.out.println("An item with the same ID already exists in the inventory.");
+        }
+        else {
+            System.out.println();
+            inventory.add(item);
+        }
     }
 
     public void updateItem(InventoryItem item) {
