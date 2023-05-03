@@ -1,0 +1,7 @@
+Ez egy Java program, amely egy készletkezelő rendszert szimulál. Két osztályt definiál - az InventoryDAO-t és az InventoryItem-et, valamint egy main metódust a Main osztályban.
+
+Az InventoryItem osztálynak négy mezője van: azonosító (egész szám), név (string), ár (lebegőpontos szám), és lejárati dátum (Date objektum). Két konstruktora van, az egyik minden négy mezőértéket vár, a másik pedig nem vár argumentumokat.
+
+Az InventoryDAO osztály egy InventoryItem objektumokból álló listát kezel. Metódusai közé tartozik az inventory olvasása egy JSON fájlból, az inventory írása egy JSON fájlba, elem hozzáadása az inventoryhoz, egy meglévő elem frissítése, egy elem törlése, egy elem lekérése az azonosítója alapján, valamint az összes elem lekérése. A Jackson könyvtárat használja a JSON olvasásához és írásához.
+
+A Main osztály tartalmazza a main metódust. Egy Scanner objektumot használ a felhasználótól érkező bemenetek fogadására, majd a felhasználó választása alapján meghívja az InventoryDAO objektum megfelelő metódusát. A program menüt jelenít meg öt opcióval: az összes elem megtekintése, új elem hozzáadása, egy meglévő elem frissítése, egy elem törlése és kilépés. Minden opció esetén felkéri a felhasználót a szükséges bemenetek megadására, majd meghívja az InventoryDAO objektum megfelelő metódusát.

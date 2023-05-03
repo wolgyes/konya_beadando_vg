@@ -1,0 +1,16 @@
+[ {
+  "id" : 4,
+  "name" : "cica",
+  "price" : 2.0,
+  "expirationDate" : 7955103600000
+}, {
+  "id" : 5,
+  "name" : "bjasdj",
+  "price" : 5.0,
+  "expirationDate" : 1580598000000
+}, {
+  "id" : 5123,
+  "name" : "asdasd",
+  "price" : 15123.0,
+  "expirationDate" : 7955103600000
+} ]
